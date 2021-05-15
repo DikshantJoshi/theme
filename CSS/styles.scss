@@ -7,7 +7,19 @@ $primaryButtonColor: #8ab6d6;
   align-items: center;
   flex-direction: $direction;
 }
-
+@mixin buttons() {
+    margin: 0 20px;
+    padding: 15px 50px;
+    border-radius: 20px;
+    border: none;
+    background-color: #fff;
+    color:$primaryBackGround;
+}
+html,
+body {
+  max-width: 100%;
+  overflow-x: auto;
+}
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +29,7 @@ body {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -66,7 +79,6 @@ nav {
 canvas {
   border-radius: 10px;
 }
-
 
 .sectionI {
   background-color: $primaryBackGround;
@@ -183,7 +195,6 @@ canvas {
         grid-column: 1 / 3;
         background: #fff !important;
         box-shadow: none !important;
-
       }
       .T {
         background: #fff !important;
@@ -205,86 +216,129 @@ canvas {
         box-shadow: 1px 1px 2px;
       }
     }
-    .sectionIIPartII{
+    .sectionIIPartII {
       width: 100%;
       height: 100%;
       background-color: #f4f9f9;
       @include flexDisplay(row);
       border-radius: 20px;
-      div{
+      div {
         width: 50%;
         height: 60%;
-        h2{
-          color:$primaryBackGround;
+        h2 {
+          color: $primaryBackGround;
           font-size: 60px;
           margin: 20px 0;
         }
-        span{
+        span {
           font-size: 40px;
           line-height: 50px;
           display: flex;
           align-items: center;
           color: rgb(73, 73, 73);
-        }p{
+        }
+        p {
           margin: 20px 0;
           line-height: 25px;
           padding: 0 0 40px 0;
           color: rgb(73, 73, 73);
         }
       }
-
-      }
     }
   }
+}
 
-  /*SectionIII*/
+/*SectionIII*/
 
-  .sectionIII{
-    @include flexDisplay(column);
-    height: 50vh;
+.sectionIII {
+  @include flexDisplay(column);
+  height: 50vh;
 
-    .sectionIIITitle{
-      span{
+  .sectionIIITitle {
+    span {
       font-size: 50px;
-      color: $primaryBackGround;}
-    }
-    .sectionIIIContainer{
-      /* width: 100%; */
-      margin:50px 0 0 50px;
-      @include flexDisplay(row);
-      justify-content: space-around;
-    }
-    .sectionIIIContainerI, .sectionIIIContainerII, .sectionIIIContainerIII{
-      width: 100%;
-      height: 100%;
-      margin: 20px 50px;
-     /*  box-shadow: 1px 1px; */
-      /* border-radius: 20px; */
-      border-right: 1px;
-      /* background-color: black; */
-      @include flexDisplay(row);
-      div{
-        margin:0 20px;
-        .fas{
-          color:$primaryBackGround;
-        }
-        color:rgb(73, 73, 73);
-        line-height: 20px;
-        
-      }
-      .card{
-        h2{
-          margin:10px 0;
-          font-size: 20px;
-        }
-      }
-
+      color: $primaryBackGround;
+      text-align: center;
     }
   }
+  .sectionIIIContainer {
+    /* width: 100%; */
+    margin: 50px 0 0 50px;
+    @include flexDisplay(row);
+    justify-content: space-around;
+  }
+  .sectionIIIContainerI,
+  .sectionIIIContainerII,
+  .sectionIIIContainerIII {
+    width: 100%;
+    height: 100%;
+    margin: 20px 50px;
+    /*  box-shadow: 1px 1px; */
+    /* border-radius: 20px; */
+    border-right: 1px;
+    /* background-color: black; */
+    @include flexDisplay(row);
+    div {
+      margin: 0 20px;
+      .fas {
+        color: $primaryBackGround;
+      }
+      color: rgb(73, 73, 73);
+      line-height: 20px;
+    }
+    .card {
+      h2 {
+        margin: 10px 0;
+        font-size: 22px;
+      }
+      p {
+        font-size: 13px;
+      }
+    }
+  }
+}
 
-
-
-
+.sectionIV {
+  height: 40vh;
+  background-color: #002f44;
+  border-radius: 20px;
+  margin: 50px;
+  @include flexDisplay(row);
+  div{
+    width: 100%;
+    height: 100%;
+  }
+  .sectionIVContainerI {
+    height: 100%;
+    width: 100%;
+    span{
+      color:#fff;
+      font-size: 30px;
+      line-height: 50px;
+      font-weight: 100;
+    }
+    /* @include flexDisplay(column); */
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    margin-left: 100px;
+    button{
+      @include buttons();
+      margin: 20px 0;
+    }
+  }
+  .sectionIVContainerII{
+    width: 100%;
+    height: 100%;
+    @include flexDisplay(row);
+    img{
+      width: 80%;
+      height: 90%;
+      border-radius: 20px;
+    }
+  }
+}
 
 /* Media queries */
 
@@ -311,21 +365,35 @@ canvas {
   }
 
   /*SectionII*/
-  .sectionIIContainer{
+  .sectionIIContainer {
     @include flexDisplay(column);
     flex-direction: column !important;
     height: 80vh;
     .sectionIIPartI {
       display: none !important;
     }
-    .sectionIIPartII{
-      div{
+    .sectionIIPartII {
+      div {
         width: 100% !important;
         height: 100% !important;
         @include flexDisplay(column);
-        margin:0 20px; 
+        margin: 0 20px;
       }
     }
+  }
 
+  /*SectionIII*/
+  .sectionIII {
+    height: 80vh;
+    .sectionIIITitle {
+      span {
+        font-size: 2rem;
+        font-weight: 800;
+      }
+    }
+    .sectionIIIContainer {
+      flex-direction: column !important;
+      margin: 50px 10px;
+    }
   }
 }
