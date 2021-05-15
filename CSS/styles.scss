@@ -1,5 +1,5 @@
 $primaryTextColor: rgb(255, 255, 255);
-$primaryBackGround: #6610f2;
+$primaryBackGround: #002f44;
 $primaryButtonColor: #8ab6d6;
 @mixin flexDisplay($direction) {
   display: flex;
@@ -66,33 +66,10 @@ nav {
 canvas {
   border-radius: 10px;
 }
-/* 
-.hero{
-    max-width: 100%;
-    height: 85vh;
-    @include flexDisplay(row);       
-    } 
-    .heroI{
-        width: 100% !important;
-        height: 100%;
-        margin: 20px;
 
-        
-          
-        
-    }
-    .heroII{
-        width: 80%;
-        height: 80%;
-        background-color: $primaryBackGround;
-        margin: 50px;
-        border-radius: 20px;
-    }
-}
- */
 
 .sectionI {
-  background-color: #002f44;
+  background-color: $primaryBackGround;
   color: white;
   height: 100vh;
   border-radius: 20px;
@@ -162,6 +139,7 @@ canvas {
     .sectionIIPartI {
       width: 100%;
       height: 100%;
+      @include flexDisplay(row);
       .container {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -230,9 +208,83 @@ canvas {
     .sectionIIPartII{
       width: 100%;
       height: 100%;
+      background-color: #f4f9f9;
+      @include flexDisplay(row);
+      border-radius: 20px;
+      div{
+        width: 50%;
+        height: 60%;
+        h2{
+          color:$primaryBackGround;
+          font-size: 60px;
+          margin: 20px 0;
+        }
+        span{
+          font-size: 40px;
+          line-height: 50px;
+          display: flex;
+          align-items: center;
+          color: rgb(73, 73, 73);
+        }p{
+          margin: 20px 0;
+          line-height: 25px;
+          padding: 0 0 40px 0;
+          color: rgb(73, 73, 73);
+        }
+      }
+
+      }
     }
   }
-}
+
+  /*SectionIII*/
+
+  .sectionIII{
+    @include flexDisplay(column);
+    height: 50vh;
+
+    .sectionIIITitle{
+      span{
+      font-size: 50px;
+      color: $primaryBackGround;}
+    }
+    .sectionIIIContainer{
+      /* width: 100%; */
+      margin:50px 0 0 50px;
+      @include flexDisplay(row);
+      justify-content: space-around;
+    }
+    .sectionIIIContainerI, .sectionIIIContainerII, .sectionIIIContainerIII{
+      width: 100%;
+      height: 100%;
+      margin: 20px 50px;
+     /*  box-shadow: 1px 1px; */
+      /* border-radius: 20px; */
+      border-right: 1px;
+      /* background-color: black; */
+      @include flexDisplay(row);
+      div{
+        margin:0 20px;
+        .fas{
+          color:$primaryBackGround;
+        }
+        color:rgb(73, 73, 73);
+        line-height: 20px;
+        
+      }
+      .card{
+        h2{
+          margin:10px 0;
+          font-size: 20px;
+        }
+      }
+
+    }
+  }
+
+
+
+
 
 /* Media queries */
 
@@ -250,11 +302,30 @@ canvas {
     }
   }
   .hero {
-    .heroI {
+    .heroII {
       display: none;
     }
-    .heroII {
+    /* .heroII {
       width: 100%;
+    } */
+  }
+
+  /*SectionII*/
+  .sectionIIContainer{
+    @include flexDisplay(column);
+    flex-direction: column !important;
+    height: 80vh;
+    .sectionIIPartI {
+      display: none !important;
     }
+    .sectionIIPartII{
+      div{
+        width: 100% !important;
+        height: 100% !important;
+        @include flexDisplay(column);
+        margin:0 20px; 
+      }
+    }
+
   }
 }
