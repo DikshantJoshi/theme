@@ -1,0 +1,83 @@
+/* Media queries */
+
+@media (max-width: 500px) {
+    nav {
+      .ham {
+        display: block;
+      }
+      .logo {
+        @include flexDisplay(left);
+      }
+      .navLeft,
+      .navRight {
+        display: none;
+      }
+    }
+    .hero {
+      .heroII {
+        display: none;
+      }
+      /* .heroII {
+        width: 100%;
+      } */
+    }
+  
+    /*SectionII*/
+    .sectionIIContainer {
+      @include flexDisplay(column);
+      flex-direction: column !important;
+      height: 80vh;
+      .sectionIIPartI {
+        display: none !important;
+      }
+      .sectionIIPartII {
+        div {
+          width: 100% !important;
+          height: 100% !important;
+          @include flexDisplay(column);
+          margin: 0 20px;
+        }
+      }
+    }
+  
+    /*SectionIII*/
+    .sectionIII {
+      height: 80vh;
+      .sectionIIITitle {
+        span {
+          font-size: 2rem;
+          font-weight: 800;
+        }
+      }
+      .sectionIIIContainer {
+        flex-direction: column !important;
+        margin: 50px 10px;
+      }
+    }
+  
+  
+    /* SectionIV */
+  
+    .sectionIV{
+      @include flexDisplay(column);
+      height: 70vh;
+      
+      .sectionIVContainerI{
+        margin-left: 10px;
+        @include flexDisplay(column);
+        
+        span{
+          font-size: 20px;
+          text-align: center;
+          margin: 0 22px;
+          font-weight: 900;
+        }
+      }
+  
+      .sectionIVContainerII{
+        margin-bottom: -40px;
+      }
+  
+    }
+  }
+  
