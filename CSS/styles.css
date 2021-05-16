@@ -281,6 +281,20 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  /* .bg1 {
+        background: url("../img/z.jpg");
+        background-position: center;
+        background-size: contain;
+        box-shadow: 1px 1px 2px;
+      }
+
+      .bg2 {
+        background: url("../img/z.jpg");
+        background-position: center;
+        background-size: contain;
+        color: #333;
+        box-shadow: 1px 1px 2px;
+      } */
 }
 
 .sectionII .sectionIIContainer .sectionIIPartI .container {
@@ -297,7 +311,7 @@ canvas {
   height: 80px;
   width: 130px;
   background-size: cover;
-  background-attachment: fixed;
+  /* background-attachment: fixed; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -356,16 +370,80 @@ canvas {
           box-shadow: none !important;
 }
 
-.sectionII .sectionIIContainer .sectionIIPartI .bg1 {
-  background: url("../img/z.jpg");
+.sectionII .sectionIIContainer .sectionIIPartI .A {
+  background: url("../img/a.jpg");
   background-position: center;
   background-size: contain;
+  color: #333;
   -webkit-box-shadow: 1px 1px 2px;
           box-shadow: 1px 1px 2px;
 }
 
-.sectionII .sectionIIContainer .sectionIIPartI .bg2 {
+.sectionII .sectionIIContainer .sectionIIPartI .C {
   background: url("../img/z.jpg");
+  background-position: center;
+  background-size: contain;
+  color: #333;
+  -webkit-box-shadow: 1px 1px 2px;
+          box-shadow: 1px 1px 2px;
+}
+
+.sectionII .sectionIIContainer .sectionIIPartI .D {
+  background: url("../img/d.jpg");
+  background-position: center;
+  background-size: contain;
+  color: #333;
+  -webkit-box-shadow: 1px 1px 2px;
+          box-shadow: 1px 1px 2px;
+}
+
+.sectionII .sectionIIContainer .sectionIIPartI .E {
+  background: url("../img/a.jpg");
+  background-position: center;
+  background-size: contain;
+  color: #333;
+  -webkit-box-shadow: 1px 1px 2px;
+          box-shadow: 1px 1px 2px;
+}
+
+.sectionII .sectionIIContainer .sectionIIPartI .F {
+  background: url("../img/e.jpg");
+  background-position: center;
+  background-size: contain;
+  color: #333;
+  -webkit-box-shadow: 1px 1px 2px;
+          box-shadow: 1px 1px 2px;
+}
+
+.sectionII .sectionIIContainer .sectionIIPartI .G {
+  background: url("../img/z.jpg");
+  background-position: center;
+  background-size: contain;
+  color: #333;
+  -webkit-box-shadow: 1px 1px 2px;
+          box-shadow: 1px 1px 2px;
+}
+
+.sectionII .sectionIIContainer .sectionIIPartI .H {
+  background: url("../img/h.jpg");
+  background-position: center;
+  background-size: contain;
+  color: #333;
+  -webkit-box-shadow: 1px 1px 2px;
+          box-shadow: 1px 1px 2px;
+}
+
+.sectionII .sectionIIContainer .sectionIIPartI .J {
+  background: url("../img/z.jpg");
+  background-position: center;
+  background-size: contain;
+  color: #333;
+  -webkit-box-shadow: 1px 1px 2px;
+          box-shadow: 1px 1px 2px;
+}
+
+.sectionII .sectionIIContainer .sectionIIPartI .K {
+  background: url("../img/k.jpg");
   background-position: center;
   background-size: contain;
   color: #333;
@@ -600,13 +678,14 @@ canvas {
 }
 
 .sectionIV .sectionIVContainerII img {
-  width: 80%;
+  width: 70%;
   height: 90%;
   border-radius: 20px;
 }
 
 .sectionV {
-  height: 100vh;
+  height: 80vh;
+  margin: 20px 0 100px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -643,6 +722,8 @@ canvas {
 .sectionV .vContainerPartI {
   width: 100%;
   height: 100%;
+  border-radius: 20px;
+  margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,6 +756,7 @@ canvas {
       -ms-flex-direction: row;
           flex-direction: row;
   /* background:black; */
+  /* background-color: #8ab6d6; */
 }
 
 .sectionV .vContainerPartI .partIContainer {
@@ -694,6 +776,8 @@ canvas {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /* background-color: #8ab6d6; */
+  border-radius: 20px;
 }
 
 .sectionV .vContainerPartI .partIContainer .vPartITitle {
@@ -717,9 +801,14 @@ canvas {
 }
 
 .sectionV .vContainerPartI .partIContainer .vPartITitle span {
-  font-size: 30px;
+  font-size: 40px;
+  line-height: 50px;
   /* font-weight: 900; */
   color: #002f44;
+}
+
+.sectionV .vContainerPartI .partIContainer .vPartITitle .P {
+  font-size: 20px;
 }
 
 .sectionV .vContainerPartI .partIContainer .vPartIBody {
@@ -815,16 +904,26 @@ canvas {
 .sectionV .vContainerPartII {
   width: 100%;
   height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .sectionV .vContainerPartII svg {
-  width: 89%;
-  height: 80%;
+  width: 60%;
+  height: 60%;
+}
+
+.sectionV .vContainerPartII p {
+  font-size: 20px;
+  font-weight: 100;
 }
 
 footer {
   /* height: 60vh; */
   background-color: #d8e3e7;
+  background-color: #f4f9f9;
   margin: 20px;
   padding: 20px 0;
   display: -webkit-box;
