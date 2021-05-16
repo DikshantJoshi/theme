@@ -435,7 +435,7 @@ canvas {
 
 
 footer{
-  height: 60vh;
+  /* height: 60vh; */
   background-color: #d8e3e7;
   margin:20px;
   padding: 20px 0;
@@ -566,10 +566,6 @@ footer{
     }
   }
 
-
-
-
-
   /* SectionIV */
 
   .sectionIV{
@@ -593,4 +589,37 @@ footer{
     }
 
   }
-}
+
+
+  /* Footer */
+footer{
+  /* height: 150vh !important; */
+  .footer{
+    
+    .footerPartI{
+      flex-direction: column !important;
+      div{
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+      }
+      .social{
+        width: 100%;
+        display: flex;
+        justify-content: center !important;
+        align-items: center !important;
+        margin: 20px !important;
+        div{
+          margin: 0;
+        }
+      }
+    }
+    .footerPartII{
+      flex-direction: column !important;
+      div{
+        width: 80% !important;
+        align-items: flex-start !important;
+      }
+    }
+  }
+}}

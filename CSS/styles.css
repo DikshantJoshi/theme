@@ -823,7 +823,7 @@ canvas {
 }
 
 footer {
-  height: 60vh;
+  /* height: 60vh; */
   background-color: #d8e3e7;
   margin: 20px;
   padding: 20px 0;
@@ -1114,6 +1114,55 @@ footer .footer .footerPartII div a {
   }
   .sectionIV .sectionIVContainerII {
     margin-bottom: -40px;
+  }
+  /* Footer */
+  footer {
+    /* height: 150vh !important; */
+  }
+  footer .footer .footerPartI {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  footer .footer .footerPartI div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+  }
+  footer .footer .footerPartI .social {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+    -webkit-box-align: center !important;
+        -ms-flex-align: center !important;
+            align-items: center !important;
+    margin: 20px !important;
+  }
+  footer .footer .footerPartI .social div {
+    margin: 0;
+  }
+  footer .footer .footerPartII {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  footer .footer .footerPartII div {
+    width: 80% !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
   }
 }
 /*# sourceMappingURL=styles.css.map */
